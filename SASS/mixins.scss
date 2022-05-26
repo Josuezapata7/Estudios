@@ -1,0 +1,19 @@
+@mixin colores($fondo,$articulo){
+
+    body{
+        background: $fondo;
+    }
+
+    .articulo{
+        background: $articulo;
+    }
+
+
+}
+
+@include colores(#ff8000, #fff);
+
+
+/*.articulo{
+    background: rgba(#ff8000,.5);
+}*/

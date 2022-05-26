@@ -1,0 +1,47 @@
+@media screen and (max-width:928px) {
+
+    .contenedor{
+
+        .main{
+
+            width: 100%;
+
+        }
+
+        header{
+
+            nav{
+
+                ul{
+
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+
+                }
+
+                li{
+                    a{
+                        &:hover{
+                            
+                            color: #fff;
+                            display: block;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        aside{
+            width: 100%;
+        }
+
+        footer{
+            width: 100%;
+        }
+
+    }
+
+}

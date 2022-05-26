@@ -1,0 +1,5 @@
+firebase login
+firebase init hosting
+/*Nos miestra como se va a llamar nuestra pagina*/
+firebase serve --only hosting
+firebase deploy

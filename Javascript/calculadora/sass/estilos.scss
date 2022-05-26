@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: #21295c;
+}
+
+.contenedor{
+
+    width: 20%;
+    background: #ccc;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+
+    .numero_uno,
+    .numero_dos,
+    .respuesta{
+        width: 100%;
+        padding: 18px;
+        margin-bottom: 20px;
+
+        outline: none;
+    }
+
+    .numero_uno:focus,
+    .numero_dos:focus,
+    .respuesta:focus{
+
+        border: 2px solid #cf5c36;
+
+    }
+
+    .numero_uno,
+    .numero_dos,
+    .respuesta,
+    p
+    {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    p{
+        font-size: 25px;
+        color: #cf5c36;;
+    }
+
+    .resultado{
+
+        width: 100%;
+        background: #cf5c36;
+        border:none;
+        padding: 20px;
+        color: #fff;
+
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+
+        border-radius: 2px;
+
+        &:hover{
+
+            opacity: 90%;
+
+        }
+
+    }
+
+}

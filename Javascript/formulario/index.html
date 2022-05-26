@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Formulario de Registros</title>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <form class="formulario" name="formulario" id="formulario">
+
+            <div class="contenedor-inputs">
+
+                <input type="text" class="nombre" id="nombre" name="nombre" placeholder="Nombre:">
+                <input type="text" name="correo" id="correo" placeholder="Correo:">
+
+                <div class="contenedor-sexo">
+
+                    <input type="radio" name="sexo" id="hombre" value="Hombre">
+                    <label for="hombre">Hombre</label>
+                    
+                    <input type="radio" name="sexo" id="mujer" value="Mujer">
+                    <label for="mujer">Mujer</label>
+
+                </div>
+
+                <div class="contenedor-terminos">
+
+                    <input type="checkbox" name="terminos" id="terminos">
+                    <label for="terminos">Acepto terminos y Condiciones</label>
+
+                </div>
+
+                <ul class="error" id="error">
+
+                </ul>
+
+            </div>    
+
+            <input type="submit" class="btn" value="Registrate">
+    
+        </form>
+
+    </div>
+
+    <script src="./js/formularios.jsx"></script>
+</body>
+</html>

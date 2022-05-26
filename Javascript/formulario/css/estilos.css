@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Slabo+27px&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #f2f2f2;
+  font-family: 'Slabo 27px', Arial, Helvetica, sans-serif; }
+
+.contenedor {
+  width: 400px;
+  background: #fff;
+  border-radius: 4px;
+  margin: 30px auto; }
+  .contenedor .formulario .contenedor-inputs {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px; }
+    .contenedor .formulario .contenedor-inputs input[type="text"] {
+      width: 100%;
+      padding: 17px;
+      margin-bottom: 20px;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #ccc;
+      font-size: 16px; }
+      .contenedor .formulario .contenedor-inputs input[type="text"]:focus {
+        border-bottom: 2px solid #246eb9; }
+    .contenedor .formulario .contenedor-inputs .contenedor-sexo {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin-bottom: 20px; }
+      .contenedor .formulario .contenedor-inputs .contenedor-sexo input[type='radio'] {
+        width: 30%;
+        display: none;
+        /*Indicamos que cuando mi input de tipo radio este seleccionado e agregamos los estilos 
+                    a nuestro label*/ }
+        .contenedor .formulario .contenedor-inputs .contenedor-sexo input[type='radio']:checked + label {
+          background: #f9a03f; }
+      .contenedor .formulario .contenedor-inputs .contenedor-sexo label {
+        width: 49%;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 4px;
+        background: rgba(249, 160, 63, 0.4);
+        color: #fff; }
+    .contenedor .formulario .contenedor-inputs .contenedor-terminos {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: lighter;
+      font-size: 15px;
+      color: #424242; }
+      .contenedor .formulario .contenedor-inputs .contenedor-terminos label {
+        margin-left: 10px; }
+    .contenedor .formulario .contenedor-inputs .error {
+      width: 100%;
+      display: none;
+      background: #ce1818;
+      padding: 10px;
+      padding-left: 40px;
+      color: #fff;
+      border-radius: 2px; }
+  .contenedor .formulario input[type='submit'] {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    color: #fff;
+    background: #246eb9;
+    cursor: pointer;
+    border-radius: 0px 0px 4px 4px;
+    font-size: 16px;
+    font-weight: bold; }
+    .contenedor .formulario input[type='submit']:hover {
+      background: #4357ad; }

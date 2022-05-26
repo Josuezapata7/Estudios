@@ -1,0 +1,26 @@
+*{ /*Selector universal*/
+    color: red; 
+}
+
+h1{
+    color: blue;
+}
+
+div article p{ /*Selector descendente*/
+    font-size: 20px;
+    color: black;
+}
+
+p a{
+    color: burlywood;
+}
+
+.grande{ /*Selector de clases*/
+
+    font-size: 28px;
+}
+
+#verde{ /*Selector de id*/
+
+    color: green;
+}

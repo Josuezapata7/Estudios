@@ -1,0 +1,12 @@
+npm install sass ------ forma de instalar sass 
+
+node-sass estilos.scss estilos.css ---------- Comando para compilar mi archivos scss a un nuevo css 
+
+node-sass estilos.scss estilos.css -w ---------- Comando para que se compile automaticamente mi archivo scss a mi archivo css
+
+node-sass -o css(carpeta para crear un solo estilo.css) sass(carpeta que contiene todos los archivos .sass) -w |comentario abajo|
+/*Comando para poder cerar un solo archivo css para una carpeta entera con archivos .scss y se siga actualizando constantemente*/
+
+
+node-sass -o css(carpeta para crear un solo estilo.css) sass/test.scss(carpeta que contiene todos los archivos .sass) -w |comentario abajo|
+/*Comando para poder cerar un solo archivo css para una carpeta con un archivo especifico de ella archivo .scss y se siga actualizando constantemente*/

@@ -1,0 +1,36 @@
+.contenedor{
+
+    .main{
+        background: #fff;
+        width: 70%;
+        float: left;
+
+        .imagen{
+
+            width: 100%;
+
+            img{
+                
+                vertical-align: top;
+                width: 100%;
+            }
+        }
+
+        .posts{
+            padding: 40px;
+
+            article{
+                
+                h2{
+                    color: #424242;
+                    margin-bottom: 20px;
+                }
+
+                p{
+                    margin-bottom: 15px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+}

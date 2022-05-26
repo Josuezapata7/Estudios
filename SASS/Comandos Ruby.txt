@@ -1,0 +1,5 @@
+comandos ruby
+cd ------ Cambio directorio
+sass estilos.scss:estilos.css   ----------- Compila archivo scss a css para poder utilizarlo con el html
+sass --watch estilos.scss:estilos.css --------------- Comando para no tener que estar compilando a cada rato
+(Tener cuidado con ñs que ruby pueda dar error por que no la reconoce)

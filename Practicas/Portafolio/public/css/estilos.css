@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open sans", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+/* ------- HEADER --------- */
+
+header{
+
+    width: 100%;
+    background: url("../img/Fondo.png");
+    background-position: center;
+
+    max-height: 600px;
+    padding: 40px 0 0 0 ;
+}
+
+header .contenedor{
+    
+    width: 90%;
+    max-width: 1000px;
+
+    margin: auto;
+    overflow: hidden;
+}
+
+header .contenedor .menu{
+    text-align: right;
+}
+
+header .contenedor .menu a{
+    margin-right: 40px;
+    padding-bottom: 9px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid transparent;
+    font-size: 1em;
+}
+
+header .contenedor .menu a:hover{
+    border-bottom: 2px solid #000;
+}
+
+header .contenedor .contenedor-texto{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 175px 0;
+}
+
+header .contenedor .contenedor-texto .texto{
+    border: 2px solid #fff ;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+
+}
+
+header .contenedor .contenedor-texto .texto h1,
+header .contenedor .contenedor-texto .texto h2{
+    font-weight: 300;
+    margin:0;
+}
+
+header .contenedor .contenedor-texto .texto h1{
+    font-weight: lighter;
+    font-size: 50px;
+    line-height: 50px;
+    
+    margin-bottom: 10px;
+}
+
+header .contenedor .contenedor-texto .texto h2{
+    font-weight: lighter;
+    font-size: 25px;
+    line-height: 25px;
+    
+}
+
+
+/* -------- MAIN(ACERCA DE) --------- */
+
+.main .acerca-de{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.main .acerca-de .contenedor{
+    width: 90%;
+    max-width: 1000px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.main .acerca-de .contenedor .foto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin: -60px 0 30px 0;
+}
+
+.main .acerca-de .contenedor .foto img{
+    vertical-align: top;
+    border: 7px solid rgba(255, 255, 255, .2);
+    border-radius: 50%;
+}
+
+.main .acerca-de .contenedor .texto{
+    text-align: center;
+    width: 80%;
+
+    margin-bottom: 60px;
+}
+
+.main .acerca-de .contenedor .texto .titulo{
+    color: #5E9CE4;
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+.main .acerca-de .contenedor .texto p{
+    font-size: 1em;
+    color: #5A5A5A;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.main .acerca-de .contenedor .texto p span{
+    color: #E2AA3B;
+    text-decoration: underline;
+}
+
+
+/* -------- MAIN(Trabajos) --------- */
+
+.main .trabajos{
+    background: #f2f2f2;
+    padding: 60px 0;
+
+}
+
+.main .trabajos .contenedor{
+
+    overflow: hidden;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+
+.main .trabajos .contenedor .titulo{
+    width: 100%;
+    font-weight: lighter;
+    font-size: 34px;
+    color: #5E9CE4;
+    margin-bottom: 60px;
+
+    text-align: center;
+}
+
+.main .trabajos .contenedor .contenedor-trabajos{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.main .trabajos .contenedor .contenedor-trabajos .trabajo{
+    width: 23%;
+    margin-bottom: 40px;
+}
+
+.main .trabajos .contenedor .contenedor-trabajos .trabajo .thumb{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.main .trabajos .contenedor .contenedor-trabajos .trabajo .thumb img{
+    vertical-align: top;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.main .trabajos .contenedor .contenedor-trabajos .trabajo .descripcion{
+    text-align: center;
+}
+
+
+.main .trabajos .contenedor .contenedor-trabajos .trabajo .descripcion .nombre_descripcion{
+
+    font-size: 16px;
+    font-weight: bold;
+    color: #B96F01;
+
+}
+
+.main .trabajos .contenedor .contenedor-trabajos .trabajo .descripcion .categoria{
+
+    font-size: 14px;
+    font-weight: lighter;
+    color: #605858;
+
+}
+
+
+/* -------- Footer(Contacto) --------- */
+
+footer .contacto {
+    padding: 60px 0;
+}
+
+footer .contacto .contenedor{
+
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+
+    text-align: center;
+}
+
+footer .contacto .contenedor .titulo{
+    font-size: 34px;
+    font-weight: lighter;
+    color: #5E9CE4;
+}
+
+footer .contacto .contenedor form{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+footer .contacto .contenedor input[type="text"],
+footer .contacto .contenedor input[type="email"],
+footer .contacto .contenedor textarea{
+    padding: 15px 20px;
+    line-height: 10px;
+
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #cecece;
+
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+footer .contacto .contenedor input[type="text"],
+footer .contacto .contenedor input[type="email"]{
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+
+footer .contacto .contenedor input:focus{
+    border: 1px solid #226fc1;
+}
+
+footer .contacto .contenedor textarea{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 300px;
+
+    outline: none;
+
+    margin-bottom: 15px;
+
+
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+footer .contacto .contenedor textarea:focus{
+    border: 1px solid #226fc1;
+}
+
+footer .contacto .contenedor input[type="submit"]{
+    padding: 15px 40px;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+    transition: .3s ease all;
+    
+    margin: auto;
+    border-radius: 3px;
+
+}
+
+footer .contacto .contenedor input[type="submit"]:hover{
+    background: #50B9E7;
+}
+
+/* -------- Footer(Redes Sociales) --------- */
+footer .redes-sociales{
+    padding: 40px 0;
+    background: #1E2B38;
+}
+
+footer .redes-sociales .contenedor{
+    width: 90%;
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+footer .redes-sociales .contenedor a{
+    display: block;
+    width: 100px;
+    padding: 20px 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+
+    margin: 0 20px;
+    transition: .5s ease all;
+}
+
+
+footer .redes-sociales .contenedor .twitter:hover{
+    background: #1DA1F2;
+}
+
+footer .redes-sociales .contenedor .youtube:hover{
+    background: #FF0000;
+}
+
+footer .redes-sociales .contenedor .facebook:hover{
+    background: #1877F2;
+}
+
+footer .redes-sociales .contenedor .instagram:hover{
+
+    background: #405DE6;
+    
+}
+
+footer .redes-sociales .contenedor .github:hover{
+    background: #4078C0;
+}
+
+/* ------ Responsive ------- */
+@media screen and (max-width:800px) {
+
+    /* ----- Header ------*/
+    header .contenedor .menu{
+
+        text-align: center;
+        margin-left: 20px;
+
+    }
+
+    header .contenedor .menu a{
+        margin-right: 20px;
+    }
+    
+
+    /* -------- MAIN(trabajos) ---------*/
+    .main .trabajos .contenedor .contenedor-trabajos .trabajo{
+        width: 46%;
+    }
+}
+
+
+@media screen and (max-width:600px){
+
+    /* ------- MAIN --------*/
+    footer .contacto .contenedor input[type="text"],
+    footer .contacto .contenedor input[type="email"]{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    header .contenedor .contenedor-texto .texto h1{
+        font-size: 35px;
+    }
+    
+    header .contenedor .contenedor-texto .texto h2{
+        font-size: 18px;
+        
+    }
+
+}

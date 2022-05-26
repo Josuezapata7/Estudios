@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes Firebase</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    
+    <h3>Agregar Imagen a Storage</h3>
+
+    <form id="form-subir-img">
+
+        <label for="input-file">Subir</label>
+        <input type="file" id="input-file" style="display: none;">
+        <p id="nombre-imagen"></p>
+
+    </form>
+
+    <div class="contenedor-imagenes" id="contenedor-imagenes">
+
+
+
+
+    </div>
+
+    
+
+    <!-- Estos 2 scripts son importantes para poder utilizar base de datos en firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- Para poder utilizar firebase firestone -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <!-- Para poder utilizar firebase storage -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+
+    <script src="./js/imagenes.jsx"></script>
+
+</body>
+</html>

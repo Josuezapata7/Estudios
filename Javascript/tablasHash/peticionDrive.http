@@ -1,0 +1,27 @@
+## Post 1
+
+
+### POST 
+POST https://www.googleapis.com/oauth2/v4/token
+Content-Type: application/json
+
+{
+  "client_id": "522288311029-7jg9a8u99sb12fd0qkc5dcuv626n5jcp.apps.googleusercontent.com",
+  "client_secret": "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",
+  "refresh_token": "1//04AHk6I_YkNPyCgYIARAAGAQSNwF-L9Ir8Mn2ab9lgxl-rGXZM-a0ckG5dh7iK6k14AJwDgFVs3gB7hiQhvbEWZoF8FY-WaQZrmc",
+  "grant_type": "refresh_token"
+}
+
+### POST
+POST https://www.googleapis.com/upload/drive/v3/files HTTP/1.1
+Host: www.googleapis.com
+Authorization: Bearer ya29.a0ARrdaM9S_sRUSAs49U4s5CXv3fUsbj_ZdHnM01O5GEOPkNO03GwxGHQ05VP0FpwyJsC7k4zHvMvXrGoVsKMD56cktHlAA7lCV1obe4wFhj3Cvo84mKCMarIJg45K3TJh5tshMH0N9lWK7P6vDw9ORBsmKkcmMA
+Content-Type: application/json
+
+{
+  "uploadType" : "logicaConsulta.PNG",
+}
+
+
+
+

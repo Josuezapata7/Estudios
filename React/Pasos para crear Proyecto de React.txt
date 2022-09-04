@@ -1,0 +1,9 @@
+Pasos para crear Proyecto de React
+
+1. npx create-react-app nombreCarpeta
+
+---- Este comando sirve por si no deja instalar con create-react-app (cualquiera de los dos)
+npx clear-npx-cache  
+npx create-react-app@5.0.0 my-app
+
+2. npm start para iniciar nuestra aplicacion

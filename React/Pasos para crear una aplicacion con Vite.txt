@@ -1,0 +1,10 @@
+Pasos para crear una aplicacion con Vitejs
+
+1. npm create vite@latest
+Proyect name: AgregamosNombre
+Select a Framework: react
+Select a variant: react
+
+2. npm install
+3. npm run dev
+4. npm run build

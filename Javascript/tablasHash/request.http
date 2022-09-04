@@ -1,0 +1,29 @@
+### Obteniendo todas las publicaciones
+
+Get https://jsonplaceholder.typicode.com/posts
+
+### Obteniendo una sola publicacion
+Get https://jsonplaceholder.typicode.com/posts/1
+
+### Creando una nueva publicacion
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{
+    "title": "Aprendiendo Rest Api",
+    "body": "Es muy divertido"
+}
+
+### Eliminando una publicacion 
+DELETE https://jsonplaceholder.typicode.com/posts/1
+
+### Actualizando una publicacion por id
+PUT https://jsonplaceholder.typicode.com/posts/1
+Content-Type: application/json
+
+{
+
+    "title" : "Esta es la publicacion numero 1",
+    "body" : "Este contenido fue actualizado"
+
+}

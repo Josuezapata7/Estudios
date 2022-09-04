@@ -1,0 +1,72 @@
+Desplear en gitHub pages con react
+
+1. npm run build
+2. git init
+3. git status
+4. git add .
+5. git commit -m "Version 1"
+// Git lo da al momento de crear el repositorio
+6. git remote add origin https://github.com/Josuezapata7/react-localstorage-test.git
+7. git push origin master
+8. agregar al pakage.json una nuevo atributo llamado homepage a este agregarle el nombre de nuestro repositorio
+"homepage": "https://Usuario.github.oi/nombreRepositorio"
+"homepage": "https://Josuezapata7.github.oi/react-localstorage-test"
+9. npm i gh-pages
+10. agregar en el objeto de scripts
+"deploy": "gh-pages -d build"
+11.npm run deploy
+
+Desplear en gitHub pages con react + vite
+1. npm run build
+2. git init
+3. git status
+4. git add .
+5. git commit -m "Version 1"
+// Git lo da al momento de crear el repositorio
+6. git remote add origin https://github.com/Josuezapata7/react-localstorage-test.git
+7. git push origin master
+8. Agregar a archivo llamado vite.config.js lo siguiente un base	
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  base: '/React-Vite-Tailwind/'
+})
+
+9. Crear un nuevo documento afuera de todo llamado deploy.sh
+y agregar lo siguiente que es de la documentacion de vite
+
+#!/usr/bin/env sh
+
+# abort on errors
+set -e
+
+# build
+npm run build
+
+# navigate into the build output directory
+cd dist
+
+# if you are deploying to a custom domain
+# echo 'www.example.com' > CNAME
+
+git init
+git checkout -b main
+git add -A
+git commit -m 'deploy'
+
+# if you are deploying to https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
+
+# if you are deploying to https://<USERNAME>.github.io/<REPO>
+//Descomentar y agregar username y repositorio
+git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages  
+//Asi
+git push -f git@github.com:Josuezapata7/React-Vite-Tailwind.git main:gh-pages
+cd -
+
+
+

@@ -1,0 +1,19 @@
+Instalar Tailwind CSS en Vite
+
+Paso 1: npm install -D tailwindcss postcss autoprefixer
+Paso 2: npx tailwindcss init -p
+Paso 3: Cambiar esto en el apartado de content
+
+content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+  ],
+
+
+
+en archivo llamado tailwind.config.css
+
+Paso 4: Añadir en archivo index.css los siguientes archivos
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

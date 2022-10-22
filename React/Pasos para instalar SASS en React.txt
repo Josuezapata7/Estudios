@@ -1,0 +1,6 @@
+Instalar SASS en React
+
+Paso 1
+npm i sass
+
+Paso 2
